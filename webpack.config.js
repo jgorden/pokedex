@@ -21,10 +21,17 @@ module.exports = {
     loaders: [
       {test: /\.jsx$/, loader: 'babel', exclude: /(node_modules|bower_components)/, query: { presets: ['react', 'es2015'] }},
       {test: /\.js$/, loader: 'babel', exclude: /(node_modules|bower_components)/, query: { presets: ['react', 'es2015'] }},
+      { test: /\.json$/, loader: 'json-loader' }
     ]
   },
   plugins: [
     definePlugin,
     commonsPlugin
-  ]
+  ],
+  node: {
+    console: true,
+    fs: 'empty',
+    net: 'empty',
+    tls: 'empty'
+  }
 };

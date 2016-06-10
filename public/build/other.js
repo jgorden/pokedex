@@ -8,7 +8,7 @@ webpackJsonp([1],[
 	'use strict';
 	
 	var React = __webpack_require__(/*! react */ 1),
-	    ReactDOM = __webpack_require__(/*! react-dom */ 158);
+	    ReactDOM = __webpack_require__(/*! react-dom */ 164);
 	
 	var AnotherComponent = React.createClass({
 	  displayName: 'AnotherComponent',
