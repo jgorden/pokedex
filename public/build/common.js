@@ -364,8 +364,8 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/*global window, global*/
-	var util = __webpack_require__(/*! util */ 482)
-	var assert = __webpack_require__(/*! assert */ 498)
+	var util = __webpack_require__(/*! util */ 380)
+	var assert = __webpack_require__(/*! assert */ 396)
 	var now = __webpack_require__(/*! date-now */ 10)
 	
 	var slice = Array.prototype.slice
@@ -20505,109 +20505,7 @@
 /* 377 */,
 /* 378 */,
 /* 379 */,
-/* 380 */,
-/* 381 */,
-/* 382 */,
-/* 383 */,
-/* 384 */,
-/* 385 */,
-/* 386 */,
-/* 387 */,
-/* 388 */,
-/* 389 */,
-/* 390 */,
-/* 391 */,
-/* 392 */,
-/* 393 */,
-/* 394 */,
-/* 395 */,
-/* 396 */,
-/* 397 */,
-/* 398 */,
-/* 399 */,
-/* 400 */,
-/* 401 */,
-/* 402 */,
-/* 403 */,
-/* 404 */,
-/* 405 */,
-/* 406 */,
-/* 407 */,
-/* 408 */,
-/* 409 */,
-/* 410 */,
-/* 411 */,
-/* 412 */,
-/* 413 */,
-/* 414 */,
-/* 415 */,
-/* 416 */,
-/* 417 */,
-/* 418 */,
-/* 419 */,
-/* 420 */,
-/* 421 */,
-/* 422 */,
-/* 423 */,
-/* 424 */,
-/* 425 */,
-/* 426 */,
-/* 427 */,
-/* 428 */,
-/* 429 */,
-/* 430 */,
-/* 431 */,
-/* 432 */,
-/* 433 */,
-/* 434 */,
-/* 435 */,
-/* 436 */,
-/* 437 */,
-/* 438 */,
-/* 439 */,
-/* 440 */,
-/* 441 */,
-/* 442 */,
-/* 443 */,
-/* 444 */,
-/* 445 */,
-/* 446 */,
-/* 447 */,
-/* 448 */,
-/* 449 */,
-/* 450 */,
-/* 451 */,
-/* 452 */,
-/* 453 */,
-/* 454 */,
-/* 455 */,
-/* 456 */,
-/* 457 */,
-/* 458 */,
-/* 459 */,
-/* 460 */,
-/* 461 */,
-/* 462 */,
-/* 463 */,
-/* 464 */,
-/* 465 */,
-/* 466 */,
-/* 467 */,
-/* 468 */,
-/* 469 */,
-/* 470 */,
-/* 471 */,
-/* 472 */,
-/* 473 */,
-/* 474 */,
-/* 475 */,
-/* 476 */,
-/* 477 */,
-/* 478 */,
-/* 479 */,
-/* 480 */,
-/* 481 */,
-/* 482 */
+/* 380 */
 /*!*************************************************************!*\
   !*** C:/Users/joji/Desktop/projects/pokedex/~/util/util.js ***!
   \*************************************************************/
@@ -21138,7 +21036,7 @@
 	}
 	exports.isPrimitive = isPrimitive;
 	
-	exports.isBuffer = __webpack_require__(/*! ./support/isBuffer */ 483);
+	exports.isBuffer = __webpack_require__(/*! ./support/isBuffer */ 381);
 	
 	function objectToString(o) {
 	  return Object.prototype.toString.call(o);
@@ -21182,7 +21080,7 @@
 	 *     prototype.
 	 * @param {function} superCtor Constructor function to inherit prototype from.
 	 */
-	exports.inherits = __webpack_require__(/*! inherits */ 484);
+	exports.inherits = __webpack_require__(/*! inherits */ 382);
 	
 	exports._extend = function(origin, add) {
 	  // Don't do anything if add isn't an object
@@ -21203,7 +21101,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/process/browser.js */ 4), __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/console-browserify/index.js */ 5)))
 
 /***/ },
-/* 483 */
+/* 381 */
 /*!********************************************************************************!*\
   !*** C:/Users/joji/Desktop/projects/pokedex/~/util/support/isBufferBrowser.js ***!
   \********************************************************************************/
@@ -21217,7 +21115,7 @@
 	}
 
 /***/ },
-/* 484 */
+/* 382 */
 /*!*****************************************************************************!*\
   !*** C:/Users/joji/Desktop/projects/pokedex/~/inherits/inherits_browser.js ***!
   \*****************************************************************************/
@@ -21249,20 +21147,20 @@
 
 
 /***/ },
-/* 485 */,
-/* 486 */,
-/* 487 */,
-/* 488 */,
-/* 489 */,
-/* 490 */,
-/* 491 */,
-/* 492 */,
-/* 493 */,
-/* 494 */,
-/* 495 */,
-/* 496 */,
-/* 497 */,
-/* 498 */
+/* 383 */,
+/* 384 */,
+/* 385 */,
+/* 386 */,
+/* 387 */,
+/* 388 */,
+/* 389 */,
+/* 390 */,
+/* 391 */,
+/* 392 */,
+/* 393 */,
+/* 394 */,
+/* 395 */,
+/* 396 */
 /*!*****************************************************************!*\
   !*** C:/Users/joji/Desktop/projects/pokedex/~/assert/assert.js ***!
   \*****************************************************************/
@@ -21336,7 +21234,7 @@
 	// ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 	// WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 	
-	var util = __webpack_require__(/*! util/ */ 482);
+	var util = __webpack_require__(/*! util/ */ 380);
 	var hasOwn = Object.prototype.hasOwnProperty;
 	var pSlice = Array.prototype.slice;
 	var functionsHaveNames = (function () {

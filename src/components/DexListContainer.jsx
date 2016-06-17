@@ -1,8 +1,8 @@
 var React = require('react');
 var request = require('request');
-var Dex = require('./Dex.jsx');
+var DexList = require('./DexList.jsx');
 
-var DexContainer = React.createClass({
+var DexListContainer = React.createClass({
   getInitialState: function() {
     return {
       data: []
@@ -11,10 +11,6 @@ var DexContainer = React.createClass({
 
   componentDidMount: function() {
     this.serverRequest = request('http://localhost:3000/dex', function (error, response, body) {
-      // console.log('response');
-      // console.log(response);
-      // console.log('body');
-      // console.log(body);
       this.setState({
         data: JSON.parse(body)
       });
@@ -26,19 +22,12 @@ var DexContainer = React.createClass({
   },
 
   render: function() {
-     var dexList = this.state.data;
-      // for (var i = 0; i < this.state.data.length; i++){
-      //   dexList[i] = this.state.data[i].name
-      // }
-    // dexList.forEach(function(dex){
-    //   dexList.push(dex);
-    // });
     console.log('data');
     console.log(this.state.data);
     return (
-      <Dex dexList={this.state.data} />
+      <DexList list={this.state.data} />
   )
   },
 });
 
-module.exports = DexContainer;
+module.exports = DexListContainer;
