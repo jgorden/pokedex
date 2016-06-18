@@ -205,7 +205,39 @@ webpackJsonp([0],[
 	module.exports = TestComponent;
 
 /***/ },
-/* 166 */,
+/* 166 */
+/*!********************************!*\
+  !*** ./src/components/Dex.jsx ***!
+  \********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1),
+	    ReactDOM = __webpack_require__(/*! react-dom */ 164);
+	
+	var Dex = React.createClass({
+	  displayName: 'Dex',
+	
+	
+	  render: function render() {
+	    return React.createElement(
+	      'div',
+	      null,
+	      this.props.list.map(function (poke) {
+	        return React.createElement(
+	          'button',
+	          { key: poke.name },
+	          poke.name
+	        );
+	      })
+	    );
+	  }
+	});
+	
+	module.exports = Dex;
+
+/***/ },
 /* 167 */
 /*!****************************!*\
   !*** ./~/request/index.js ***!
@@ -552,7 +584,7 @@ webpackJsonp([0],[
 	 */
 	'use strict';
 	var net = __webpack_require__(/*! net */ 171);
-	var urlParse = __webpack_require__(/*! url */ 383).parse;
+	var urlParse = __webpack_require__(/*! url */ 504).parse;
 	var pubsuffix = __webpack_require__(/*! ./pubsuffix */ 178);
 	var Store = __webpack_require__(/*! ./store */ 180).Store;
 	var MemoryCookieStore = __webpack_require__(/*! ./memstore */ 181).MemoryCookieStore;
@@ -2526,7 +2558,7 @@ webpackJsonp([0],[
 	
 	}(this));
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../webpack/buildin/module.js */ 385)(module), (function() { return this; }())))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../webpack/buildin/module.js */ 506)(module), (function() { return this; }())))
 
 /***/ },
 /* 180 */
@@ -2649,7 +2681,7 @@ webpackJsonp([0],[
 	var Store = __webpack_require__(/*! ./store */ 180).Store;
 	var permuteDomain = __webpack_require__(/*! ./permuteDomain */ 182).permuteDomain;
 	var pathMatch = __webpack_require__(/*! ./pathMatch */ 183).pathMatch;
-	var util = __webpack_require__(/*! util */ 399);
+	var util = __webpack_require__(/*! util */ 518);
 	
 	function MemoryCookieStore() {
 	  Store.call(this);
@@ -3142,7 +3174,7 @@ webpackJsonp([0],[
 	exports.version               = version
 	exports.defer                 = deferMethod()
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/timers-browserify/main.js */ 189).setImmediate, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/process/browser.js */ 4), __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 391).Buffer))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/timers-browserify/main.js */ 189).setImmediate, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/process/browser.js */ 4), __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 512).Buffer))
 
 /***/ },
 /* 189 */
@@ -3330,7 +3362,7 @@ webpackJsonp([0],[
 	  }
 	})
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 391).Buffer))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 512).Buffer))
 
 /***/ },
 /* 196 */
@@ -3366,7 +3398,7 @@ webpackJsonp([0],[
 	  }
 	}())
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 391).Buffer))
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 512).Buffer))
 
 /***/ },
 /* 197 */
@@ -3415,7 +3447,7 @@ webpackJsonp([0],[
 	  return createHash(alg)
 	}
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 391).Buffer))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 512).Buffer))
 
 /***/ },
 /* 199 */
@@ -3430,7 +3462,7 @@ webpackJsonp([0],[
 	  return new Alg()
 	}
 	
-	var Buffer = __webpack_require__(/*! buffer */ 391).Buffer
+	var Buffer = __webpack_require__(/*! buffer */ 512).Buffer
 	var Hash   = __webpack_require__(/*! ./hash */ 200)(Buffer)
 	
 	exports.sha1 = __webpack_require__(/*! ./sha1 */ 201)(Buffer, Hash)
@@ -3540,7 +3572,7 @@ webpackJsonp([0],[
 	 * See http://pajhome.org.uk/crypt/md5 for details.
 	 */
 	
-	var inherits = __webpack_require__(/*! util */ 380).inherits
+	var inherits = __webpack_require__(/*! util */ 501).inherits
 	
 	module.exports = function (Buffer, Hash) {
 	
@@ -3687,7 +3719,7 @@ webpackJsonp([0],[
 	 *
 	 */
 	
-	var inherits = __webpack_require__(/*! util */ 380).inherits
+	var inherits = __webpack_require__(/*! util */ 501).inherits
 	
 	module.exports = function (Buffer, Hash) {
 	
@@ -3834,7 +3866,7 @@ webpackJsonp([0],[
   \*****************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	var inherits = __webpack_require__(/*! util */ 380).inherits
+	var inherits = __webpack_require__(/*! util */ 501).inherits
 	
 	module.exports = function (Buffer, Hash) {
 	  var K = [
@@ -4286,7 +4318,7 @@ webpackJsonp([0],[
 	
 	module.exports = { hash: hash };
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 391).Buffer))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 512).Buffer))
 
 /***/ },
 /* 206 */
@@ -4501,7 +4533,7 @@ webpackJsonp([0],[
 	
 	
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 391).Buffer))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 512).Buffer))
 
 /***/ },
 /* 207 */
@@ -4554,7 +4586,7 @@ webpackJsonp([0],[
 	}
 	
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 391).Buffer))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 512).Buffer))
 
 /***/ },
 /* 208 */
@@ -4669,7 +4701,7 @@ webpackJsonp([0],[
 	  }
 	}
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 391).Buffer))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 512).Buffer))
 
 /***/ },
 /* 210 */
@@ -4682,8 +4714,8 @@ webpackJsonp([0],[
 	
 	var http = __webpack_require__(/*! http */ 211)
 	  , https = __webpack_require__(/*! https */ 237)
-	  , url = __webpack_require__(/*! url */ 383)
-	  , util = __webpack_require__(/*! util */ 399)
+	  , url = __webpack_require__(/*! url */ 504)
+	  , util = __webpack_require__(/*! util */ 518)
 	  , stream = __webpack_require__(/*! stream */ 214)
 	  , zlib = __webpack_require__(/*! zlib */ 238)
 	  , bl = __webpack_require__(/*! bl */ 258)
@@ -6117,7 +6149,7 @@ webpackJsonp([0],[
 	Request.prototype.toJSON = requestToJSON
 	module.exports = Request
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/process/browser.js */ 4), __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/console-browserify/index.js */ 5), __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 391).Buffer))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/process/browser.js */ 4), __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/console-browserify/index.js */ 5), __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 512).Buffer))
 
 /***/ },
 /* 211 */
@@ -6127,9 +6159,9 @@ webpackJsonp([0],[
 /***/ function(module, exports, __webpack_require__) {
 
 	var http = module.exports;
-	var EventEmitter = __webpack_require__(/*! events */ 394).EventEmitter;
+	var EventEmitter = __webpack_require__(/*! events */ 515).EventEmitter;
 	var Request = __webpack_require__(/*! ./lib/request */ 213);
-	var url = __webpack_require__(/*! url */ 402)
+	var url = __webpack_require__(/*! url */ 521)
 	
 	http.request = function (params, cb) {
 	    if (typeof params === 'string') {
@@ -6283,7 +6315,7 @@ webpackJsonp([0],[
 	var Stream = __webpack_require__(/*! stream */ 214);
 	var Response = __webpack_require__(/*! ./response */ 229);
 	var Base64 = __webpack_require__(/*! Base64 */ 230);
-	var inherits = __webpack_require__(/*! inherits */ 382);
+	var inherits = __webpack_require__(/*! inherits */ 503);
 	
 	var Request = module.exports = function (xhr, params) {
 	    var self = this;
@@ -6521,8 +6553,8 @@ webpackJsonp([0],[
 	
 	module.exports = Stream;
 	
-	var EE = __webpack_require__(/*! events */ 394).EventEmitter;
-	var inherits = __webpack_require__(/*! inherits */ 382);
+	var EE = __webpack_require__(/*! events */ 515).EventEmitter;
+	var inherits = __webpack_require__(/*! inherits */ 503);
 	
 	inherits(Stream, EE);
 	Stream.Readable = __webpack_require__(/*! readable-stream/readable.js */ 215);
@@ -6683,12 +6715,12 @@ webpackJsonp([0],[
 	
 	
 	/*<replacement>*/
-	var Buffer = __webpack_require__(/*! buffer */ 391).Buffer;
+	var Buffer = __webpack_require__(/*! buffer */ 512).Buffer;
 	/*</replacement>*/
 	
 	Readable.ReadableState = ReadableState;
 	
-	var EE = __webpack_require__(/*! events */ 394).EventEmitter;
+	var EE = __webpack_require__(/*! events */ 515).EventEmitter;
 	
 	/*<replacement>*/
 	if (!EE.listenerCount) EE.listenerCount = function(emitter, type) {
@@ -6699,8 +6731,8 @@ webpackJsonp([0],[
 	var Stream = __webpack_require__(/*! stream */ 214);
 	
 	/*<replacement>*/
-	var util = __webpack_require__(/*! core-util-is */ 389);
-	util.inherits = __webpack_require__(/*! inherits */ 382);
+	var util = __webpack_require__(/*! core-util-is */ 510);
+	util.inherits = __webpack_require__(/*! inherits */ 503);
 	/*</replacement>*/
 	
 	var StringDecoder;
@@ -6780,7 +6812,7 @@ webpackJsonp([0],[
 	  this.encoding = null;
 	  if (options.encoding) {
 	    if (!StringDecoder)
-	      StringDecoder = __webpack_require__(/*! string_decoder/ */ 395).StringDecoder;
+	      StringDecoder = __webpack_require__(/*! string_decoder/ */ 516).StringDecoder;
 	    this.decoder = new StringDecoder(options.encoding);
 	    this.encoding = options.encoding;
 	  }
@@ -6890,7 +6922,7 @@ webpackJsonp([0],[
 	// backwards compatibility.
 	Readable.prototype.setEncoding = function(enc) {
 	  if (!StringDecoder)
-	    StringDecoder = __webpack_require__(/*! string_decoder/ */ 395).StringDecoder;
+	    StringDecoder = __webpack_require__(/*! string_decoder/ */ 516).StringDecoder;
 	  this._readableState.decoder = new StringDecoder(enc);
 	  this._readableState.encoding = enc;
 	  return this;
@@ -7675,8 +7707,8 @@ webpackJsonp([0],[
 	
 	
 	/*<replacement>*/
-	var util = __webpack_require__(/*! core-util-is */ 389);
-	util.inherits = __webpack_require__(/*! inherits */ 382);
+	var util = __webpack_require__(/*! core-util-is */ 510);
+	util.inherits = __webpack_require__(/*! inherits */ 503);
 	/*</replacement>*/
 	
 	var Readable = __webpack_require__(/*! ./_stream_readable */ 216);
@@ -7764,15 +7796,15 @@ webpackJsonp([0],[
 	module.exports = Writable;
 	
 	/*<replacement>*/
-	var Buffer = __webpack_require__(/*! buffer */ 391).Buffer;
+	var Buffer = __webpack_require__(/*! buffer */ 512).Buffer;
 	/*</replacement>*/
 	
 	Writable.WritableState = WritableState;
 	
 	
 	/*<replacement>*/
-	var util = __webpack_require__(/*! core-util-is */ 389);
-	util.inherits = __webpack_require__(/*! inherits */ 382);
+	var util = __webpack_require__(/*! core-util-is */ 510);
+	util.inherits = __webpack_require__(/*! inherits */ 503);
 	/*</replacement>*/
 	
 	var Stream = __webpack_require__(/*! stream */ 214);
@@ -8293,8 +8325,8 @@ webpackJsonp([0],[
 	var Duplex = __webpack_require__(/*! ./_stream_duplex */ 220);
 	
 	/*<replacement>*/
-	var util = __webpack_require__(/*! core-util-is */ 389);
-	util.inherits = __webpack_require__(/*! inherits */ 382);
+	var util = __webpack_require__(/*! core-util-is */ 510);
+	util.inherits = __webpack_require__(/*! inherits */ 503);
 	/*</replacement>*/
 	
 	util.inherits(Transform, Duplex);
@@ -8472,8 +8504,8 @@ webpackJsonp([0],[
 	var Transform = __webpack_require__(/*! ./_stream_transform */ 223);
 	
 	/*<replacement>*/
-	var util = __webpack_require__(/*! core-util-is */ 389);
-	util.inherits = __webpack_require__(/*! inherits */ 382);
+	var util = __webpack_require__(/*! core-util-is */ 510);
+	util.inherits = __webpack_require__(/*! inherits */ 503);
 	/*</replacement>*/
 	
 	util.inherits(PassThrough, Transform);
@@ -8538,7 +8570,7 @@ webpackJsonp([0],[
 /***/ function(module, exports, __webpack_require__) {
 
 	var Stream = __webpack_require__(/*! stream */ 214);
-	var util = __webpack_require__(/*! util */ 380);
+	var util = __webpack_require__(/*! util */ 501);
 	
 	var Response = module.exports = function (res) {
 	    this.offset = 0;
@@ -8787,8 +8819,8 @@ webpackJsonp([0],[
 	var Transform = __webpack_require__(/*! _stream_transform */ 239);
 	
 	var binding = __webpack_require__(/*! ./binding */ 246);
-	var util = __webpack_require__(/*! util */ 380);
-	var assert = __webpack_require__(/*! assert */ 396).ok;
+	var util = __webpack_require__(/*! util */ 501);
+	var assert = __webpack_require__(/*! assert */ 517).ok;
 	
 	// zlib doesn't provide these, so kludge them in following the same
 	// const naming scheme zlib uses.
@@ -9374,7 +9406,7 @@ webpackJsonp([0],[
 	util.inherits(InflateRaw, Zlib);
 	util.inherits(Unzip, Zlib);
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 391).Buffer, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/process/browser.js */ 4)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 512).Buffer, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/process/browser.js */ 4)))
 
 /***/ },
 /* 239 */
@@ -9462,8 +9494,8 @@ webpackJsonp([0],[
 	var Duplex = __webpack_require__(/*! ./_stream_duplex */ 241);
 	
 	/*<replacement>*/
-	var util = __webpack_require__(/*! core-util-is */ 389);
-	util.inherits = __webpack_require__(/*! inherits */ 382);
+	var util = __webpack_require__(/*! core-util-is */ 510);
+	util.inherits = __webpack_require__(/*! inherits */ 503);
 	/*</replacement>*/
 	
 	util.inherits(Transform, Duplex);
@@ -9649,8 +9681,8 @@ webpackJsonp([0],[
 	
 	
 	/*<replacement>*/
-	var util = __webpack_require__(/*! core-util-is */ 389);
-	util.inherits = __webpack_require__(/*! inherits */ 382);
+	var util = __webpack_require__(/*! core-util-is */ 510);
+	util.inherits = __webpack_require__(/*! inherits */ 503);
 	/*</replacement>*/
 	
 	var Readable = __webpack_require__(/*! ./_stream_readable */ 242);
@@ -9739,12 +9771,12 @@ webpackJsonp([0],[
 	
 	
 	/*<replacement>*/
-	var Buffer = __webpack_require__(/*! buffer */ 391).Buffer;
+	var Buffer = __webpack_require__(/*! buffer */ 512).Buffer;
 	/*</replacement>*/
 	
 	Readable.ReadableState = ReadableState;
 	
-	var EE = __webpack_require__(/*! events */ 394).EventEmitter;
+	var EE = __webpack_require__(/*! events */ 515).EventEmitter;
 	
 	/*<replacement>*/
 	if (!EE.listenerCount) EE.listenerCount = function(emitter, type) {
@@ -9755,8 +9787,8 @@ webpackJsonp([0],[
 	var Stream = __webpack_require__(/*! stream */ 214);
 	
 	/*<replacement>*/
-	var util = __webpack_require__(/*! core-util-is */ 389);
-	util.inherits = __webpack_require__(/*! inherits */ 382);
+	var util = __webpack_require__(/*! core-util-is */ 510);
+	util.inherits = __webpack_require__(/*! inherits */ 503);
 	/*</replacement>*/
 	
 	var StringDecoder;
@@ -9836,7 +9868,7 @@ webpackJsonp([0],[
 	  this.encoding = null;
 	  if (options.encoding) {
 	    if (!StringDecoder)
-	      StringDecoder = __webpack_require__(/*! string_decoder/ */ 395).StringDecoder;
+	      StringDecoder = __webpack_require__(/*! string_decoder/ */ 516).StringDecoder;
 	    this.decoder = new StringDecoder(options.encoding);
 	    this.encoding = options.encoding;
 	  }
@@ -9946,7 +9978,7 @@ webpackJsonp([0],[
 	// backwards compatibility.
 	Readable.prototype.setEncoding = function(enc) {
 	  if (!StringDecoder)
-	    StringDecoder = __webpack_require__(/*! string_decoder/ */ 395).StringDecoder;
+	    StringDecoder = __webpack_require__(/*! string_decoder/ */ 516).StringDecoder;
 	  this._readableState.decoder = new StringDecoder(enc);
 	  this._readableState.encoding = enc;
 	  return this;
@@ -10720,15 +10752,15 @@ webpackJsonp([0],[
 	module.exports = Writable;
 	
 	/*<replacement>*/
-	var Buffer = __webpack_require__(/*! buffer */ 391).Buffer;
+	var Buffer = __webpack_require__(/*! buffer */ 512).Buffer;
 	/*</replacement>*/
 	
 	Writable.WritableState = WritableState;
 	
 	
 	/*<replacement>*/
-	var util = __webpack_require__(/*! core-util-is */ 389);
-	util.inherits = __webpack_require__(/*! inherits */ 382);
+	var util = __webpack_require__(/*! core-util-is */ 510);
+	util.inherits = __webpack_require__(/*! inherits */ 503);
 	/*</replacement>*/
 	
 	var Stream = __webpack_require__(/*! stream */ 214);
@@ -11416,7 +11448,7 @@ webpackJsonp([0],[
 	
 	exports.Zlib = Zlib;
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/process/browser.js */ 4), __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 391).Buffer))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/process/browser.js */ 4), __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 512).Buffer))
 
 /***/ },
 /* 247 */
@@ -16909,7 +16941,7 @@ webpackJsonp([0],[
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(Buffer) {var DuplexStream = __webpack_require__(/*! readable-stream/duplex */ 259)
-	  , util         = __webpack_require__(/*! util */ 399)
+	  , util         = __webpack_require__(/*! util */ 518)
 	
 	function BufferList (callback) {
 	  if (!(this instanceof BufferList))
@@ -17136,7 +17168,7 @@ webpackJsonp([0],[
 	
 	module.exports = BufferList
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 391).Buffer))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 512).Buffer))
 
 /***/ },
 /* 259 */
@@ -17179,8 +17211,8 @@ webpackJsonp([0],[
 	/*</replacement>*/
 	
 	/*<replacement>*/
-	var util = __webpack_require__(/*! core-util-is */ 408);
-	util.inherits = __webpack_require__(/*! inherits */ 401);
+	var util = __webpack_require__(/*! core-util-is */ 527);
+	util.inherits = __webpack_require__(/*! inherits */ 520);
 	/*</replacement>*/
 	
 	var Readable = __webpack_require__(/*! ./_stream_readable */ 263);
@@ -17301,16 +17333,16 @@ webpackJsonp([0],[
 	/*</replacement>*/
 	
 	/*<replacement>*/
-	var isArray = __webpack_require__(/*! isarray */ 409);
+	var isArray = __webpack_require__(/*! isarray */ 528);
 	/*</replacement>*/
 	
 	/*<replacement>*/
-	var Buffer = __webpack_require__(/*! buffer */ 410).Buffer;
+	var Buffer = __webpack_require__(/*! buffer */ 529).Buffer;
 	/*</replacement>*/
 	
 	Readable.ReadableState = ReadableState;
 	
-	var EE = __webpack_require__(/*! events */ 413);
+	var EE = __webpack_require__(/*! events */ 532);
 	
 	/*<replacement>*/
 	var EElistenerCount = function (emitter, type) {
@@ -17324,16 +17356,16 @@ webpackJsonp([0],[
 	  try {
 	    Stream = __webpack_require__(/*! stream */ 214);
 	  } catch (_) {} finally {
-	    if (!Stream) Stream = __webpack_require__(/*! events */ 413).EventEmitter;
+	    if (!Stream) Stream = __webpack_require__(/*! events */ 532).EventEmitter;
 	  }
 	})();
 	/*</replacement>*/
 	
-	var Buffer = __webpack_require__(/*! buffer */ 410).Buffer;
+	var Buffer = __webpack_require__(/*! buffer */ 529).Buffer;
 	
 	/*<replacement>*/
-	var util = __webpack_require__(/*! core-util-is */ 408);
-	util.inherits = __webpack_require__(/*! inherits */ 401);
+	var util = __webpack_require__(/*! core-util-is */ 527);
+	util.inherits = __webpack_require__(/*! inherits */ 520);
 	/*</replacement>*/
 	
 	/*<replacement>*/
@@ -17411,7 +17443,7 @@ webpackJsonp([0],[
 	  this.decoder = null;
 	  this.encoding = null;
 	  if (options.encoding) {
-	    if (!StringDecoder) StringDecoder = __webpack_require__(/*! string_decoder/ */ 414).StringDecoder;
+	    if (!StringDecoder) StringDecoder = __webpack_require__(/*! string_decoder/ */ 533).StringDecoder;
 	    this.decoder = new StringDecoder(options.encoding);
 	    this.encoding = options.encoding;
 	  }
@@ -17522,7 +17554,7 @@ webpackJsonp([0],[
 	
 	// backwards compatibility.
 	Readable.prototype.setEncoding = function (enc) {
-	  if (!StringDecoder) StringDecoder = __webpack_require__(/*! string_decoder/ */ 414).StringDecoder;
+	  if (!StringDecoder) StringDecoder = __webpack_require__(/*! string_decoder/ */ 533).StringDecoder;
 	  this._readableState.decoder = new StringDecoder(enc);
 	  this._readableState.encoding = enc;
 	  return this;
@@ -18213,14 +18245,14 @@ webpackJsonp([0],[
 	/*</replacement>*/
 	
 	/*<replacement>*/
-	var Buffer = __webpack_require__(/*! buffer */ 410).Buffer;
+	var Buffer = __webpack_require__(/*! buffer */ 529).Buffer;
 	/*</replacement>*/
 	
 	Writable.WritableState = WritableState;
 	
 	/*<replacement>*/
-	var util = __webpack_require__(/*! core-util-is */ 408);
-	util.inherits = __webpack_require__(/*! inherits */ 401);
+	var util = __webpack_require__(/*! core-util-is */ 527);
+	util.inherits = __webpack_require__(/*! inherits */ 520);
 	/*</replacement>*/
 	
 	/*<replacement>*/
@@ -18235,12 +18267,12 @@ webpackJsonp([0],[
 	  try {
 	    Stream = __webpack_require__(/*! stream */ 214);
 	  } catch (_) {} finally {
-	    if (!Stream) Stream = __webpack_require__(/*! events */ 413).EventEmitter;
+	    if (!Stream) Stream = __webpack_require__(/*! events */ 532).EventEmitter;
 	  }
 	})();
 	/*</replacement>*/
 	
-	var Buffer = __webpack_require__(/*! buffer */ 410).Buffer;
+	var Buffer = __webpack_require__(/*! buffer */ 529).Buffer;
 	
 	util.inherits(Writable, Stream);
 	
@@ -19467,7 +19499,7 @@ webpackJsonp([0],[
 	 */
 	
 	var crypto = __webpack_require__(/*! crypto */ 195)
-	  , parse = __webpack_require__(/*! url */ 383).parse
+	  , parse = __webpack_require__(/*! url */ 504).parse
 	  ;
 	
 	/**
@@ -19705,7 +19737,7 @@ webpackJsonp([0],[
 	// Copyright 2012 Joyent, Inc.  All rights reserved.
 	
 	var assert = __webpack_require__(/*! assert-plus */ 277);
-	var util = __webpack_require__(/*! util */ 399);
+	var util = __webpack_require__(/*! util */ 518);
 	
 	
 	
@@ -20017,9 +20049,9 @@ webpackJsonp([0],[
 
 	/* WEBPACK VAR INJECTION */(function(process, Buffer) {// Copyright (c) 2012, Mark Cavage. All rights reserved.
 	
-	var assert = __webpack_require__(/*! assert */ 415);
+	var assert = __webpack_require__(/*! assert */ 534);
 	var Stream = __webpack_require__(/*! stream */ 214).Stream;
-	var util = __webpack_require__(/*! util */ 399);
+	var util = __webpack_require__(/*! util */ 518);
 	
 	
 	
@@ -20261,7 +20293,7 @@ webpackJsonp([0],[
 	        };
 	});
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/process/browser.js */ 4), __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 391).Buffer))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/process/browser.js */ 4), __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 512).Buffer))
 
 /***/ },
 /* 278 */,
@@ -20277,7 +20309,7 @@ webpackJsonp([0],[
 	var crypto = __webpack_require__(/*! crypto */ 195);
 	var http = __webpack_require__(/*! http */ 211);
 	
-	var sprintf = __webpack_require__(/*! util */ 399).format;
+	var sprintf = __webpack_require__(/*! util */ 518).format;
 	
 	
 	
@@ -20830,7 +20862,7 @@ webpackJsonp([0],[
 	  }
 	};
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 391).Buffer, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/console-browserify/index.js */ 5)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 512).Buffer, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/console-browserify/index.js */ 5)))
 
 /***/ },
 /* 282 */
@@ -20973,7 +21005,7 @@ webpackJsonp([0],[
 
 	/* WEBPACK VAR INJECTION */(function(Buffer) {// Copyright 2011 Mark Cavage <mcavage@gmail.com> All rights reserved.
 	
-	var assert = __webpack_require__(/*! assert */ 415);
+	var assert = __webpack_require__(/*! assert */ 534);
 	
 	var ASN1 = __webpack_require__(/*! ./types */ 285);
 	var errors = __webpack_require__(/*! ./errors */ 284);
@@ -21239,7 +21271,7 @@ webpackJsonp([0],[
 	
 	module.exports = Reader;
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 391).Buffer))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 512).Buffer))
 
 /***/ },
 /* 287 */
@@ -21250,7 +21282,7 @@ webpackJsonp([0],[
 
 	/* WEBPACK VAR INJECTION */(function(Buffer) {// Copyright 2011 Mark Cavage <mcavage@gmail.com> All rights reserved.
 	
-	var assert = __webpack_require__(/*! assert */ 415);
+	var assert = __webpack_require__(/*! assert */ 534);
 	var ASN1 = __webpack_require__(/*! ./types */ 285);
 	var errors = __webpack_require__(/*! ./errors */ 284);
 	
@@ -21566,7 +21598,7 @@ webpackJsonp([0],[
 	
 	module.exports = Writer;
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 391).Buffer))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 512).Buffer))
 
 /***/ },
 /* 288 */
@@ -21614,7 +21646,7 @@ webpackJsonp([0],[
 	
 	var mod_ctf = __webpack_require__(/*! ./ctf.js */ 289);
 	var mod_ctio = __webpack_require__(/*! ./ctio.js */ 290);
-	var mod_assert = __webpack_require__(/*! assert */ 415);
+	var mod_assert = __webpack_require__(/*! assert */ 534);
 	
 	/*
 	 * This is the set of basic types that we support.
@@ -22520,7 +22552,7 @@ webpackJsonp([0],[
 	exports.wfloat = mod_ctio.wfloat;
 	exports.wdouble = mod_ctio.wdouble;
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 391).Buffer))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 512).Buffer))
 
 /***/ },
 /* 289 */
@@ -22539,7 +22571,7 @@ webpackJsonp([0],[
 	 * We have to be careful here that we don't end up using a name that is already
 	 * a built in type.
 	 */
-	var mod_assert = __webpack_require__(/*! assert */ 415);
+	var mod_assert = __webpack_require__(/*! assert */ 534);
 	var ASSERT = mod_assert.ok;
 	
 	var ctf_versions = [ '1.0' ];
@@ -22825,7 +22857,7 @@ webpackJsonp([0],[
 	 * Big Endian: MSB -> First byte
 	 * Little Endian: MSB->Last byte
 	 */
-	var mod_assert = __webpack_require__(/*! assert */ 415);
+	var mod_assert = __webpack_require__(/*! assert */ 534);
 	
 	/*
 	 * An 8 bit unsigned integer involves doing no significant work.
@@ -33248,9 +33280,9 @@ webpackJsonp([0],[
   \****************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(Buffer) {var util = __webpack_require__(/*! util */ 399)
+	/* WEBPACK VAR INJECTION */(function(Buffer) {var util = __webpack_require__(/*! util */ 518)
 	var Stream = __webpack_require__(/*! stream */ 214)
-	var StringDecoder = __webpack_require__(/*! string_decoder */ 414).StringDecoder
+	var StringDecoder = __webpack_require__(/*! string_decoder */ 533).StringDecoder
 	
 	module.exports = StringStream
 	module.exports.AlignedStringDecoder = AlignedStringDecoder
@@ -33351,7 +33383,7 @@ webpackJsonp([0],[
 	  return returnBuffer.toString(this.encoding)
 	}
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 391).Buffer))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 512).Buffer))
 
 /***/ },
 /* 296 */
@@ -33438,7 +33470,7 @@ webpackJsonp([0],[
 	module.exports = ForeverAgent
 	ForeverAgent.SSL = ForeverAgentSSL
 	
-	var util = __webpack_require__(/*! util */ 399)
+	var util = __webpack_require__(/*! util */ 518)
 	  , Agent = __webpack_require__(/*! http */ 211).Agent
 	  , net = __webpack_require__(/*! net */ 171)
 	  , tls = __webpack_require__(/*! tls */ 171)
@@ -33685,7 +33717,7 @@ webpackJsonp([0],[
 	'use strict'
 	
 	var qs = __webpack_require__(/*! qs */ 301)
-	  , querystring = __webpack_require__(/*! querystring */ 386)
+	  , querystring = __webpack_require__(/*! querystring */ 507)
 	
 	
 	function Querystring (request) {
@@ -34327,9 +34359,9 @@ webpackJsonp([0],[
 	'use strict'
 	
 	var fs = __webpack_require__(/*! fs */ 171)
-	var qs = __webpack_require__(/*! querystring */ 386)
+	var qs = __webpack_require__(/*! querystring */ 507)
 	var validate = __webpack_require__(/*! har-validator */ 306)
-	var util = __webpack_require__(/*! util */ 399)
+	var util = __webpack_require__(/*! util */ 518)
 	
 	function Har (request) {
 	  this.request = request
@@ -36226,7 +36258,7 @@ webpackJsonp([0],[
   \**************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	var util = __webpack_require__(/*! util */ 399)
+	var util = __webpack_require__(/*! util */ 518)
 	
 	var INDENT_START = /[\{\[]/
 	var INDENT_END = /[\}\]]/
@@ -36882,7 +36914,7 @@ webpackJsonp([0],[
 	  }
 	})('undefined' !== typeof window ? window : null);
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/console-browserify/index.js */ 5), __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 391).Buffer))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/console-browserify/index.js */ 5), __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 512).Buffer))
 
 /***/ },
 /* 336 */
@@ -36893,7 +36925,7 @@ webpackJsonp([0],[
 
 	/* WEBPACK VAR INJECTION */(function(Buffer) {'use strict'
 	
-	var url = __webpack_require__(/*! url */ 383)
+	var url = __webpack_require__(/*! url */ 504)
 	  , qs = __webpack_require__(/*! qs */ 301)
 	  , caseless = __webpack_require__(/*! caseless */ 296)
 	  , uuid = __webpack_require__(/*! node-uuid */ 335)
@@ -37039,7 +37071,7 @@ webpackJsonp([0],[
 	
 	exports.OAuth = OAuth
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 391).Buffer))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 512).Buffer))
 
 /***/ },
 /* 337 */
@@ -37049,7 +37081,7 @@ webpackJsonp([0],[
 /***/ function(module, exports, __webpack_require__) {
 
 	var crypto = __webpack_require__(/*! crypto */ 195)
-	  , qs = __webpack_require__(/*! querystring */ 386)
+	  , qs = __webpack_require__(/*! querystring */ 507)
 	  ;
 	
 	function sha1 (key, body) {
@@ -37303,7 +37335,7 @@ webpackJsonp([0],[
 	
 	exports.Multipart = Multipart
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 391).Buffer))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 512).Buffer))
 
 /***/ },
 /* 339 */
@@ -37312,7 +37344,7 @@ webpackJsonp([0],[
   \**************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(Buffer) {var util = __webpack_require__(/*! util */ 399);
+	/* WEBPACK VAR INJECTION */(function(Buffer) {var util = __webpack_require__(/*! util */ 518);
 	var Stream = __webpack_require__(/*! stream */ 214).Stream;
 	var DelayedStream = __webpack_require__(/*! delayed-stream */ 340);
 	
@@ -37501,7 +37533,7 @@ webpackJsonp([0],[
 	  this.emit('error', err);
 	};
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 391).Buffer))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 512).Buffer))
 
 /***/ },
 /* 340 */
@@ -37511,7 +37543,7 @@ webpackJsonp([0],[
 /***/ function(module, exports, __webpack_require__) {
 
 	var Stream = __webpack_require__(/*! stream */ 214).Stream;
-	var util = __webpack_require__(/*! util */ 399);
+	var util = __webpack_require__(/*! util */ 518);
 	
 	module.exports = DelayedStream;
 	function DelayedStream() {
@@ -37664,7 +37696,7 @@ webpackJsonp([0],[
 
 	'use strict'
 	
-	var url = __webpack_require__(/*! url */ 383)
+	var url = __webpack_require__(/*! url */ 504)
 	var isUrl = /^https?:/
 	
 	function Redirect (request) {
@@ -37827,7 +37859,7 @@ webpackJsonp([0],[
 
 	'use strict'
 	
-	var url = __webpack_require__(/*! url */ 383)
+	var url = __webpack_require__(/*! url */ 504)
 	  , tunnel = __webpack_require__(/*! tunnel-agent */ 344)
 	
 	var defaultProxyHeaderWhiteList = [
@@ -38023,9 +38055,9 @@ webpackJsonp([0],[
 	  , tls = __webpack_require__(/*! tls */ 171)
 	  , http = __webpack_require__(/*! http */ 211)
 	  , https = __webpack_require__(/*! https */ 237)
-	  , events = __webpack_require__(/*! events */ 413)
-	  , assert = __webpack_require__(/*! assert */ 415)
-	  , util = __webpack_require__(/*! util */ 399)
+	  , events = __webpack_require__(/*! events */ 532)
+	  , assert = __webpack_require__(/*! assert */ 534)
+	  , util = __webpack_require__(/*! util */ 518)
 	  ;
 	
 	exports.httpOverHttp = httpOverHttp
@@ -38261,10 +38293,53 @@ webpackJsonp([0],[
 	}
 	exports.debug = debug // for test
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 391).Buffer, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/process/browser.js */ 4), __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/console-browserify/index.js */ 5)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 512).Buffer, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/process/browser.js */ 4), __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/console-browserify/index.js */ 5)))
 
 /***/ },
-/* 345 */,
+/* 345 */
+/*!*****************************************!*\
+  !*** ./src/components/DexContainer.jsx ***!
+  \*****************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(console) {'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var request = __webpack_require__(/*! request */ 167);
+	var Dex = __webpack_require__(/*! ./Dex.jsx */ 166);
+	
+	var DexContainer = React.createClass({
+	  displayName: 'DexContainer',
+	
+	  getInitialState: function getInitialState() {
+	    return {
+	      data: []
+	    };
+	  },
+	
+	  componentDidMount: function componentDidMount() {
+	    this.serverRequest = request('http://localhost:3000/dex', function (error, response, body) {
+	      this.setState({
+	        data: JSON.parse(body)
+	      });
+	    }.bind(this));
+	  },
+	
+	  componentWillUnmount: function componentWillUnmount() {
+	    this.serverRequest.abort();
+	  },
+	
+	  render: function render() {
+	    console.log('data');
+	    console.log(this.state.data);
+	    return React.createElement(DexList, { list: this.state.data });
+	  }
+	});
+	
+	module.exports = DexContainer;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/console-browserify/index.js */ 5)))
+
+/***/ },
 /* 346 */,
 /* 347 */,
 /* 348 */,
@@ -38302,7 +38377,208 @@ webpackJsonp([0],[
 /* 380 */,
 /* 381 */,
 /* 382 */,
-/* 383 */
+/* 383 */,
+/* 384 */,
+/* 385 */,
+/* 386 */,
+/* 387 */,
+/* 388 */,
+/* 389 */,
+/* 390 */,
+/* 391 */,
+/* 392 */,
+/* 393 */,
+/* 394 */,
+/* 395 */,
+/* 396 */,
+/* 397 */
+/*!************************************!*\
+  !*** ./src/components/DexList.jsx ***!
+  \************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1),
+	    ReactDOM = __webpack_require__(/*! react-dom */ 164);
+	var DexContainer = __webpack_require__(/*! ./DexContainer.jsx */ 345);
+	
+	var DexList = React.createClass({
+	  displayName: 'DexList',
+	
+	
+	  loadDex: function loadDex() {
+	    ReactDOM.render(React.createElement(DexContainer, null), document.getElementById("react-container"));
+	  },
+	
+	  render: function render() {
+	    return React.createElement(
+	      'div',
+	      null,
+	      this.props.list.map(function (dex) {
+	        return React.createElement(
+	          'button',
+	          { key: dex.name, onClick: this.loadDex },
+	          dex.name
+	        );
+	      })
+	    );
+	  }
+	});
+	
+	module.exports = DexList;
+
+/***/ },
+/* 398 */
+/*!*********************************************!*\
+  !*** ./src/components/DexListContainer.jsx ***!
+  \*********************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(console) {'use strict';
+	
+	var React = __webpack_require__(/*! react */ 1);
+	var request = __webpack_require__(/*! request */ 167);
+	var DexList = __webpack_require__(/*! ./DexList.jsx */ 397);
+	
+	var DexListContainer = React.createClass({
+	  displayName: 'DexListContainer',
+	
+	  getInitialState: function getInitialState() {
+	    return {
+	      data: []
+	    };
+	  },
+	
+	  componentDidMount: function componentDidMount() {
+	    this.serverRequest = request('http://localhost:3000/dex', function (error, response, body) {
+	      this.setState({
+	        data: JSON.parse(body)
+	      });
+	    }.bind(this));
+	  },
+	
+	  componentWillUnmount: function componentWillUnmount() {
+	    this.serverRequest.abort();
+	  },
+	
+	  render: function render() {
+	    console.log('data');
+	    console.log(this.state.data);
+	    return React.createElement(DexList, { list: this.state.data });
+	  }
+	});
+	
+	module.exports = DexListContainer;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/console-browserify/index.js */ 5)))
+
+/***/ },
+/* 399 */,
+/* 400 */,
+/* 401 */,
+/* 402 */,
+/* 403 */,
+/* 404 */,
+/* 405 */,
+/* 406 */,
+/* 407 */,
+/* 408 */,
+/* 409 */,
+/* 410 */,
+/* 411 */,
+/* 412 */,
+/* 413 */,
+/* 414 */,
+/* 415 */,
+/* 416 */,
+/* 417 */,
+/* 418 */,
+/* 419 */,
+/* 420 */,
+/* 421 */,
+/* 422 */,
+/* 423 */,
+/* 424 */,
+/* 425 */,
+/* 426 */,
+/* 427 */,
+/* 428 */,
+/* 429 */,
+/* 430 */,
+/* 431 */,
+/* 432 */,
+/* 433 */,
+/* 434 */,
+/* 435 */,
+/* 436 */,
+/* 437 */,
+/* 438 */,
+/* 439 */,
+/* 440 */,
+/* 441 */,
+/* 442 */,
+/* 443 */,
+/* 444 */,
+/* 445 */,
+/* 446 */,
+/* 447 */,
+/* 448 */,
+/* 449 */,
+/* 450 */,
+/* 451 */,
+/* 452 */,
+/* 453 */,
+/* 454 */,
+/* 455 */,
+/* 456 */,
+/* 457 */,
+/* 458 */,
+/* 459 */,
+/* 460 */,
+/* 461 */,
+/* 462 */,
+/* 463 */,
+/* 464 */,
+/* 465 */,
+/* 466 */,
+/* 467 */,
+/* 468 */,
+/* 469 */,
+/* 470 */,
+/* 471 */,
+/* 472 */,
+/* 473 */,
+/* 474 */,
+/* 475 */,
+/* 476 */,
+/* 477 */,
+/* 478 */,
+/* 479 */,
+/* 480 */,
+/* 481 */,
+/* 482 */,
+/* 483 */,
+/* 484 */,
+/* 485 */,
+/* 486 */,
+/* 487 */,
+/* 488 */,
+/* 489 */,
+/* 490 */,
+/* 491 */,
+/* 492 */,
+/* 493 */,
+/* 494 */,
+/* 495 */,
+/* 496 */,
+/* 497 */,
+/* 498 */,
+/* 499 */,
+/* 500 */,
+/* 501 */,
+/* 502 */,
+/* 503 */,
+/* 504 */
 /*!**********************!*\
   !*** ./~/url/url.js ***!
   \**********************/
@@ -38329,7 +38605,7 @@ webpackJsonp([0],[
 	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
 	// USE OR OTHER DEALINGS IN THE SOFTWARE.
 	
-	var punycode = __webpack_require__(/*! punycode */ 384);
+	var punycode = __webpack_require__(/*! punycode */ 505);
 	
 	exports.parse = urlParse;
 	exports.resolve = urlResolve;
@@ -38401,7 +38677,7 @@ webpackJsonp([0],[
 	      'gopher:': true,
 	      'file:': true
 	    },
-	    querystring = __webpack_require__(/*! querystring */ 386);
+	    querystring = __webpack_require__(/*! querystring */ 507);
 	
 	function urlParse(url, parseQueryString, slashesDenoteHost) {
 	  if (url && isObject(url) && url instanceof Url) return url;
@@ -39018,7 +39294,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 384 */
+/* 505 */
 /*!**************************************!*\
   !*** ./~/url/~/punycode/punycode.js ***!
   \**************************************/
@@ -39553,10 +39829,10 @@ webpackJsonp([0],[
 	
 	}(this));
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../../webpack/buildin/module.js */ 385)(module), (function() { return this; }())))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../../webpack/buildin/module.js */ 506)(module), (function() { return this; }())))
 
 /***/ },
-/* 385 */
+/* 506 */
 /*!*************************************!*\
   !*** ./~/webpack/buildin/module.js ***!
   \*************************************/
@@ -39575,7 +39851,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 386 */
+/* 507 */
 /*!********************************!*\
   !*** ./~/querystring/index.js ***!
   \********************************/
@@ -39583,12 +39859,12 @@ webpackJsonp([0],[
 
 	'use strict';
 	
-	exports.decode = exports.parse = __webpack_require__(/*! ./decode */ 387);
-	exports.encode = exports.stringify = __webpack_require__(/*! ./encode */ 388);
+	exports.decode = exports.parse = __webpack_require__(/*! ./decode */ 508);
+	exports.encode = exports.stringify = __webpack_require__(/*! ./encode */ 509);
 
 
 /***/ },
-/* 387 */
+/* 508 */
 /*!*********************************!*\
   !*** ./~/querystring/decode.js ***!
   \*********************************/
@@ -39677,7 +39953,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 388 */
+/* 509 */
 /*!*********************************!*\
   !*** ./~/querystring/encode.js ***!
   \*********************************/
@@ -39750,7 +40026,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 389 */
+/* 510 */
 /*!*************************************************************************!*\
   !*** C:/Users/joji/Desktop/projects/pokedex/~/core-util-is/lib/util.js ***!
   \*************************************************************************/
@@ -39864,10 +40140,10 @@ webpackJsonp([0],[
 	  return Object.prototype.toString.call(o);
 	}
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 391).Buffer))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 512).Buffer))
 
 /***/ },
-/* 390 */
+/* 511 */
 /*!*****************************************************************!*\
   !*** C:/Users/joji/Desktop/projects/pokedex/~/isarray/index.js ***!
   \*****************************************************************/
@@ -39881,7 +40157,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 391 */
+/* 512 */
 /*!****************************************************************!*\
   !*** C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js ***!
   \****************************************************************/
@@ -39897,9 +40173,9 @@ webpackJsonp([0],[
 	
 	'use strict'
 	
-	var base64 = __webpack_require__(/*! base64-js */ 392)
-	var ieee754 = __webpack_require__(/*! ieee754 */ 393)
-	var isArray = __webpack_require__(/*! isarray */ 390)
+	var base64 = __webpack_require__(/*! base64-js */ 513)
+	var ieee754 = __webpack_require__(/*! ieee754 */ 514)
+	var isArray = __webpack_require__(/*! isarray */ 511)
 	
 	exports.Buffer = Buffer
 	exports.SlowBuffer = SlowBuffer
@@ -41436,10 +41712,10 @@ webpackJsonp([0],[
 	  return i
 	}
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 391).Buffer, (function() { return this; }()), __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/console-browserify/index.js */ 5)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 512).Buffer, (function() { return this; }()), __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/console-browserify/index.js */ 5)))
 
 /***/ },
-/* 392 */
+/* 513 */
 /*!******************************************************************************!*\
   !*** C:/Users/joji/Desktop/projects/pokedex/~/buffer/~/base64-js/lib/b64.js ***!
   \******************************************************************************/
@@ -41572,7 +41848,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 393 */
+/* 514 */
 /*!*****************************************************************!*\
   !*** C:/Users/joji/Desktop/projects/pokedex/~/ieee754/index.js ***!
   \*****************************************************************/
@@ -41665,7 +41941,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 394 */
+/* 515 */
 /*!*****************************************************************!*\
   !*** C:/Users/joji/Desktop/projects/pokedex/~/events/events.js ***!
   \*****************************************************************/
@@ -41973,7 +42249,7 @@ webpackJsonp([0],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/console-browserify/index.js */ 5)))
 
 /***/ },
-/* 395 */
+/* 516 */
 /*!************************************************************************!*\
   !*** C:/Users/joji/Desktop/projects/pokedex/~/string_decoder/index.js ***!
   \************************************************************************/
@@ -42000,7 +42276,7 @@ webpackJsonp([0],[
 	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
 	// USE OR OTHER DEALINGS IN THE SOFTWARE.
 	
-	var Buffer = __webpack_require__(/*! buffer */ 391).Buffer;
+	var Buffer = __webpack_require__(/*! buffer */ 512).Buffer;
 	
 	var isBufferEncoding = Buffer.isEncoding
 	  || function(encoding) {
@@ -42203,84 +42479,8 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 396 */,
-/* 397 */
-/*!************************************!*\
-  !*** ./src/components/DexList.jsx ***!
-  \************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var React = __webpack_require__(/*! react */ 1);
-	
-	var DexList = React.createClass({
-	  displayName: 'DexList',
-	
-	
-	  render: function render() {
-	    return React.createElement(
-	      'div',
-	      null,
-	      this.props.list.map(function (dex) {
-	        return React.createElement(
-	          'button',
-	          { key: dex.name },
-	          dex.name
-	        );
-	      })
-	    );
-	  }
-	});
-	
-	module.exports = DexList;
-
-/***/ },
-/* 398 */
-/*!*********************************************!*\
-  !*** ./src/components/DexListContainer.jsx ***!
-  \*********************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(console) {'use strict';
-	
-	var React = __webpack_require__(/*! react */ 1);
-	var request = __webpack_require__(/*! request */ 167);
-	var DexList = __webpack_require__(/*! ./DexList.jsx */ 397);
-	
-	var DexListContainer = React.createClass({
-	  displayName: 'DexListContainer',
-	
-	  getInitialState: function getInitialState() {
-	    return {
-	      data: []
-	    };
-	  },
-	
-	  componentDidMount: function componentDidMount() {
-	    this.serverRequest = request('http://localhost:3000/dex', function (error, response, body) {
-	      this.setState({
-	        data: JSON.parse(body)
-	      });
-	    }.bind(this));
-	  },
-	
-	  componentWillUnmount: function componentWillUnmount() {
-	    this.serverRequest.abort();
-	  },
-	
-	  render: function render() {
-	    console.log('data');
-	    console.log(this.state.data);
-	    return React.createElement(DexList, { list: this.state.data });
-	  }
-	});
-	
-	module.exports = DexListContainer;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/console-browserify/index.js */ 5)))
-
-/***/ },
-/* 399 */
+/* 517 */,
+/* 518 */
 /*!************************!*\
   !*** ./~/util/util.js ***!
   \************************/
@@ -42811,7 +43011,7 @@ webpackJsonp([0],[
 	}
 	exports.isPrimitive = isPrimitive;
 	
-	exports.isBuffer = __webpack_require__(/*! ./support/isBuffer */ 400);
+	exports.isBuffer = __webpack_require__(/*! ./support/isBuffer */ 519);
 	
 	function objectToString(o) {
 	  return Object.prototype.toString.call(o);
@@ -42855,7 +43055,7 @@ webpackJsonp([0],[
 	 *     prototype.
 	 * @param {function} superCtor Constructor function to inherit prototype from.
 	 */
-	exports.inherits = __webpack_require__(/*! inherits */ 401);
+	exports.inherits = __webpack_require__(/*! inherits */ 520);
 	
 	exports._extend = function(origin, add) {
 	  // Don't do anything if add isn't an object
@@ -42876,7 +43076,7 @@ webpackJsonp([0],[
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/process/browser.js */ 4), __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/console-browserify/index.js */ 5)))
 
 /***/ },
-/* 400 */
+/* 519 */
 /*!*******************************************!*\
   !*** ./~/util/support/isBufferBrowser.js ***!
   \*******************************************/
@@ -42890,7 +43090,7 @@ webpackJsonp([0],[
 	}
 
 /***/ },
-/* 401 */
+/* 520 */
 /*!****************************************!*\
   !*** ./~/inherits/inherits_browser.js ***!
   \****************************************/
@@ -42922,7 +43122,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 402 */
+/* 521 */
 /*!***********************************************************!*\
   !*** C:/Users/joji/Desktop/projects/pokedex/~/url/url.js ***!
   \***********************************************************/
@@ -42949,7 +43149,7 @@ webpackJsonp([0],[
 	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
 	// USE OR OTHER DEALINGS IN THE SOFTWARE.
 	
-	var punycode = __webpack_require__(/*! punycode */ 403);
+	var punycode = __webpack_require__(/*! punycode */ 522);
 	
 	exports.parse = urlParse;
 	exports.resolve = urlResolve;
@@ -43021,7 +43221,7 @@ webpackJsonp([0],[
 	      'gopher:': true,
 	      'file:': true
 	    },
-	    querystring = __webpack_require__(/*! querystring */ 405);
+	    querystring = __webpack_require__(/*! querystring */ 524);
 	
 	function urlParse(url, parseQueryString, slashesDenoteHost) {
 	  if (url && isObject(url) && url instanceof Url) return url;
@@ -43638,7 +43838,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 403 */
+/* 522 */
 /*!***************************************************************************!*\
   !*** C:/Users/joji/Desktop/projects/pokedex/~/url/~/punycode/punycode.js ***!
   \***************************************************************************/
@@ -44173,10 +44373,10 @@ webpackJsonp([0],[
 	
 	}(this));
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../../webpack/buildin/module.js */ 404)(module), (function() { return this; }())))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../../webpack/buildin/module.js */ 523)(module), (function() { return this; }())))
 
 /***/ },
-/* 404 */
+/* 523 */
 /*!***********************************!*\
   !*** (webpack)/buildin/module.js ***!
   \***********************************/
@@ -44195,7 +44395,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 405 */
+/* 524 */
 /*!*********************************************************************!*\
   !*** C:/Users/joji/Desktop/projects/pokedex/~/querystring/index.js ***!
   \*********************************************************************/
@@ -44203,12 +44403,12 @@ webpackJsonp([0],[
 
 	'use strict';
 	
-	exports.decode = exports.parse = __webpack_require__(/*! ./decode */ 406);
-	exports.encode = exports.stringify = __webpack_require__(/*! ./encode */ 407);
+	exports.decode = exports.parse = __webpack_require__(/*! ./decode */ 525);
+	exports.encode = exports.stringify = __webpack_require__(/*! ./encode */ 526);
 
 
 /***/ },
-/* 406 */
+/* 525 */
 /*!**********************************************************************!*\
   !*** C:/Users/joji/Desktop/projects/pokedex/~/querystring/decode.js ***!
   \**********************************************************************/
@@ -44297,7 +44497,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 407 */
+/* 526 */
 /*!**********************************************************************!*\
   !*** C:/Users/joji/Desktop/projects/pokedex/~/querystring/encode.js ***!
   \**********************************************************************/
@@ -44370,7 +44570,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 408 */
+/* 527 */
 /*!************************************!*\
   !*** ./~/core-util-is/lib/util.js ***!
   \************************************/
@@ -44484,10 +44684,10 @@ webpackJsonp([0],[
 	  return Object.prototype.toString.call(o);
 	}
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 391).Buffer))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 512).Buffer))
 
 /***/ },
-/* 409 */
+/* 528 */
 /*!****************************!*\
   !*** ./~/isarray/index.js ***!
   \****************************/
@@ -44501,7 +44701,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 410 */
+/* 529 */
 /*!***************************!*\
   !*** ./~/buffer/index.js ***!
   \***************************/
@@ -44517,9 +44717,9 @@ webpackJsonp([0],[
 	
 	'use strict'
 	
-	var base64 = __webpack_require__(/*! base64-js */ 411)
-	var ieee754 = __webpack_require__(/*! ieee754 */ 412)
-	var isArray = __webpack_require__(/*! isarray */ 409)
+	var base64 = __webpack_require__(/*! base64-js */ 530)
+	var ieee754 = __webpack_require__(/*! ieee754 */ 531)
+	var isArray = __webpack_require__(/*! isarray */ 528)
 	
 	exports.Buffer = Buffer
 	exports.SlowBuffer = SlowBuffer
@@ -46056,10 +46256,10 @@ webpackJsonp([0],[
 	  return i
 	}
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 391).Buffer, (function() { return this; }()), __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/console-browserify/index.js */ 5)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/buffer/index.js */ 512).Buffer, (function() { return this; }()), __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/console-browserify/index.js */ 5)))
 
 /***/ },
-/* 411 */
+/* 530 */
 /*!*****************************************!*\
   !*** ./~/buffer/~/base64-js/lib/b64.js ***!
   \*****************************************/
@@ -46192,7 +46392,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 412 */
+/* 531 */
 /*!****************************!*\
   !*** ./~/ieee754/index.js ***!
   \****************************/
@@ -46285,7 +46485,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 413 */
+/* 532 */
 /*!****************************!*\
   !*** ./~/events/events.js ***!
   \****************************/
@@ -46593,7 +46793,7 @@ webpackJsonp([0],[
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! C:/Users/joji/Desktop/projects/pokedex/~/console-browserify/index.js */ 5)))
 
 /***/ },
-/* 414 */
+/* 533 */
 /*!***********************************!*\
   !*** ./~/string_decoder/index.js ***!
   \***********************************/
@@ -46620,7 +46820,7 @@ webpackJsonp([0],[
 	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
 	// USE OR OTHER DEALINGS IN THE SOFTWARE.
 	
-	var Buffer = __webpack_require__(/*! buffer */ 410).Buffer;
+	var Buffer = __webpack_require__(/*! buffer */ 529).Buffer;
 	
 	var isBufferEncoding = Buffer.isEncoding
 	  || function(encoding) {
@@ -46823,7 +47023,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 415 */
+/* 534 */
 /*!****************************!*\
   !*** ./~/assert/assert.js ***!
   \****************************/
@@ -46897,7 +47097,7 @@ webpackJsonp([0],[
 	// ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 	// WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 	
-	var util = __webpack_require__(/*! util/ */ 399);
+	var util = __webpack_require__(/*! util/ */ 518);
 	var hasOwn = Object.prototype.hasOwnProperty;
 	var pSlice = Array.prototype.slice;
 	var functionsHaveNames = (function () {
