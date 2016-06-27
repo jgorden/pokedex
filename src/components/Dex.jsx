@@ -1,19 +1,19 @@
-var React = require('react');
-var request = require('request');
+var React    = require('react'),
+    ReactDOM = require('react-dom');
 
 var Dex = React.createClass({
-
 
   render: function() {
     return (
       <div>
+        'we pokemon now'
         {
-          this.props.dexList.map(function(dex){
-            return <button>{dex.name}</button>
+          this.props.data.map(function(poke){
+            return <p key={poke.entry_number}>{poke.pokemon_species.name}</p>
           })
         }
       </div>
-  )
+    )
   },
 });
 
