@@ -10,7 +10,7 @@ var DexListContainer = React.createClass({
   },
 
   componentDidMount: function() {
-    this.serverRequest = request('http://localhost:3000/dex', function (error, response, body) {
+    request('http://localhost:3000/dex', function (error, response, body) {
       this.setState({
         data: JSON.parse(body)
       });
@@ -18,12 +18,12 @@ var DexListContainer = React.createClass({
   },
 
   componentWillUnmount: function() {
-    this.serverRequest.abort();
+    // this.serverRequest.destroy();
   },
 
   render: function() {
-    console.log('data');
-    console.log(this.state.data);
+    // console.log('data');
+    // console.log(this.state.data);
     return (
       <DexList list={this.state.data} />
   )

@@ -4,19 +4,22 @@ var DexContainer = require('./DexContainer.jsx');
 
 var DexList = React.createClass({
   
-  loadDex: function() {
+  loadDex: function(url) {
+    console.log('url');
+    console.log(url);
     ReactDOM.render(
-      <DexContainer />,
+      <DexContainer url={url}/>,
       document.getElementById("react-container")
     );
   },
 
   render: function() {
+    var _this = this;
     return (
       <div>
         {
           this.props.list.map(function(dex){
-            return <button key={dex.name} onClick={this.loadDex}>{dex.name}</button>
+            return <button key={dex.name} onClick={() => _this.loadDex(dex.url)}>{dex.name}</button>
           })
         }
       </div>

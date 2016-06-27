@@ -5,27 +5,31 @@ var Dex = require('./Dex.jsx');
 var DexContainer = React.createClass({
   getInitialState: function() {
     return {
-      data: []
+      data: { pokemon_entries: [] }
     };
   },
 
   componentDidMount: function() {
-    this.serverRequest = request('http://localhost:3000/dex', function (error, response, body) {
+    var url = 'http://localhost:3000/dex/' + this.props.url.slice(-2, -1);
+    request(url, function (error, response, body) {
+      console.log('request made');
       this.setState({
         data: JSON.parse(body)
       });
     }.bind(this));
   },
 
-  componentWillUnmount: function() {
-    this.serverRequest.abort();
-  },
+  // componentWillUnmount: function() {
+  //   console.log('unmount');
+  //   // this.serverRequest.abort();
+  // },
 
   render: function() {
+    // console.log('render');
     console.log('data');
     console.log(this.state.data);
     return (
-      <DexList list={this.state.data} />
+      <Dex data={this.state.data.pokemon_entries} />
   )
   },
 });

@@ -6,13 +6,14 @@ var Dex = React.createClass({
   render: function() {
     return (
       <div>
+        'we pokemon now'
         {
-          this.props.list.map(function(poke){
-            return <button key={poke.name}>{poke.name}</button>
+          this.props.data.map(function(poke){
+            return <p key={poke.entry_number}>{poke.pokemon_species.name}</p>
           })
         }
       </div>
-  )
+    )
   },
 });
 

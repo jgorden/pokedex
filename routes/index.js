@@ -16,8 +16,16 @@ router.get('/dex', function(req, res) {
   });
   console.log('wooooowooooowoooo')
 });
-router.get('/other', function(req, res) {
-  res.render('other', { title: 'Other' });
+router.get('/dex/:dexNum', function(req, res) {
+  // console.log(req.params.dexNum)
+  var data = {};
+  // console.log('does this even run');
+  request('http://pokeapi.co/api/v2/pokedex/'+ req.params.dexNum, function (error, response, body) {
+    data.body = JSON.parse(body);
+    // console.log('woohoo');
+    res.json(data.body);   
+  });
+  // console.log('wooooowooooowoooo')
 });
 
 
