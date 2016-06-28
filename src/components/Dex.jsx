@@ -5,6 +5,8 @@ var PokeContainer = require('./PokeContainer.jsx');
 
 var Dex = React.createClass({
   loadPoke: function(url){
+    console.log('click');
+    ReactDOM.unmountComponentAtNode(document.getElementById("info-container"));
     ReactDOM.render(
       <PokeContainer url={url}/>,
       document.getElementById("info-container")

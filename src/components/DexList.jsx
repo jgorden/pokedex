@@ -5,8 +5,8 @@ var DexContainer = require('./DexContainer.jsx');
 var DexList = React.createClass({
   
   loadDex: function(url) {
-    console.log('url');
-    console.log(url);
+    // console.log('url');
+    // console.log(url);
     ReactDOM.render(
       <DexContainer url={url}/>,
       document.getElementById("react-container")

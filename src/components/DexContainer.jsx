@@ -12,7 +12,7 @@ var DexContainer = React.createClass({
   componentDidMount: function() {
     var url = 'http://localhost:3000/dex/' + this.props.url.slice(33, -1);
     request(url, function (error, response, body) {
-      console.log('request made');
+      // console.log('request made');
       this.setState({
         data: JSON.parse(body)
       });
@@ -26,8 +26,8 @@ var DexContainer = React.createClass({
 
   render: function() {
     // console.log('render');
-    console.log('data');
-    console.log(this.state.data);
+    // console.log('data');
+    // console.log(this.state.data);
     return (
       <Dex data={this.state.data.pokemon_entries} />
   )
