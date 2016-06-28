@@ -1,18 +1,20 @@
-var React = require('react');
+var React    = require('react');
 var request = require('request');
-var Dex = require('./Dex.jsx');
+var Poke = require('./Poke.jsx');
 
-var DexContainer = React.createClass({
+
+var PokeContainer = React.createClass({
   getInitialState: function() {
     return {
-      data: { pokemon_entries: [] }
+      data: {  }
     };
   },
 
   componentDidMount: function() {
-    var url = 'http://localhost:3000/dex/' + this.props.url.slice(33, -1);
+    var url = 'http://localhost:3000/poke/' + this.props.url.slice(41, -1);
+    console.log(this.props.url.slice(41, -1));
     request(url, function (error, response, body) {
-      // console.log('request made');
+      console.log('request made');
       this.setState({
         data: JSON.parse(body)
       });
@@ -25,13 +27,13 @@ var DexContainer = React.createClass({
   // },
 
   render: function() {
-    // console.log('render');
+    // console.log(this.props.url);
     // console.log('data');
     // console.log(this.state.data);
     return (
-      <Dex data={this.state.data.pokemon_entries} />
+      <Poke data={this.state.data.pokemon_entries} />
   )
   },
 });
 
-module.exports = DexContainer;
+module.exports = PokeContainer;

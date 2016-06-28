@@ -8,24 +8,24 @@ router.get('/', function(req, res) {
 });
 router.get('/dex', function(req, res) {
   var data = {};
-  console.log('does this even run');
   request('http://pokeapi.co/api/v2/pokedex', function (error, response, body) {
     data.body = JSON.parse(body);
-    console.log('woohoo');
     res.json(data.body.results);   
   });
-  console.log('wooooowooooowoooo')
 });
 router.get('/dex/:dexNum', function(req, res) {
-  // console.log(req.params.dexNum)
   var data = {};
-  // console.log('does this even run');
   request('http://pokeapi.co/api/v2/pokedex/'+ req.params.dexNum, function (error, response, body) {
     data.body = JSON.parse(body);
-    // console.log('woohoo');
     res.json(data.body);   
   });
-  // console.log('wooooowooooowoooo')
+});
+router.get('/poke/:id', function(req, res) {
+  var data = {};
+  request('http://pokeapi.co/api/v2/pokemon-species/'+ req.params.id, function (error, response, body) {
+    data.body = JSON.parse(body);
+    res.json(data.body);   
+  });
 });
 
 
