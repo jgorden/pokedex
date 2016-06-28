@@ -10,7 +10,7 @@ var DexContainer = React.createClass({
   },
 
   componentDidMount: function() {
-    var url = 'http://localhost:3000/dex/' + this.props.url.slice(-2, -1);
+    var url = 'http://localhost:3000/dex/' + this.props.url.slice(33, -1);
     request(url, function (error, response, body) {
       console.log('request made');
       this.setState({

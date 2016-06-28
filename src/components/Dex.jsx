@@ -1,15 +1,24 @@
 var React    = require('react'),
     ReactDOM = require('react-dom');
+var PokeContainer = require('./PokeContainer.jsx');
+
 
 var Dex = React.createClass({
+  loadPoke: function(url){
+    ReactDOM.render(
+      <PokeContainer url={url}/>,
+      document.getElementById("info-container")
+    );
+  },
 
   render: function() {
+    var _this = this;
     return (
       <div>
-        'we pokemon now'
+        <span id="info-container"></span>
         {
           this.props.data.map(function(poke){
-            return <p key={poke.entry_number}>{poke.pokemon_species.name}</p>
+            return <button key={poke.entry_number} onClick={() => _this.loadPoke(poke.pokemon_species.url)}>{poke.pokemon_species.name}</button>
           })
         }
       </div>
