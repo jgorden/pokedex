@@ -22,7 +22,8 @@ router.get('/dex/:dexNum', function(req, res) {
 });
 router.get('/poke/:id', function(req, res) {
   var data = {};
-  request('http://pokeapi.co/api/v2/pokemon-species/'+ req.params.id, function (error, response, body) {
+  console.log(req.params.id);
+  request('http://pokeapi.co/api/v2/pokemon/'+ req.params.id, function (error, response, body) {
     data.body = JSON.parse(body);
     res.json(data.body);   
   });
