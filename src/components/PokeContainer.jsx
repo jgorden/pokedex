@@ -6,11 +6,13 @@ var Poke = require('./Poke.jsx');
 var PokeContainer = React.createClass({
   getInitialState: function() {
     return {
-      data: { 
-        sprites: { 
-          src: { 
-            front_default: null, 
-            back_default: null 
+      data: {
+        standard: {
+          sprites: { 
+            src: { 
+              front_default: null, 
+              back_default: null 
+            } 
           } 
         } 
       }
