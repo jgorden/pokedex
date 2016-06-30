@@ -8,6 +8,7 @@ var PokeContainer = React.createClass({
     return {
       data: {
         standard: {
+          id: null,
           sprites: { 
             src: { 
               front_default: null, 
