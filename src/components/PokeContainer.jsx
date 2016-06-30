@@ -6,7 +6,20 @@ var Poke = require('./Poke.jsx');
 var PokeContainer = React.createClass({
   getInitialState: function() {
     return {
-      data: {  }
+      data: {
+        standard: {
+          id: null,
+          sprites: { 
+            src: { 
+              front_default: null, 
+              back_default: null 
+            } 
+          } 
+        },
+        species: {
+          flavor_text_entries:[ {}, { flavor_text: null } ]
+        } 
+      }
     };
   },
 
@@ -27,11 +40,11 @@ var PokeContainer = React.createClass({
   // },
 
   render: function() {
-    // console.log(this.props.url);
-    // console.log('data');
-    // console.log(this.state.data);
+    console.log(this.props.url);
+    console.log('data');
+    console.log(this.state.data);
     return (
-      <Poke data={this.state.data.pokemon_entries} />
+      <Poke data={this.state.data} />
   )
   },
 });

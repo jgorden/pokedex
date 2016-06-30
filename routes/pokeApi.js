@@ -22,10 +22,33 @@ router.get('/dex/:dexNum', function(req, res) {
 });
 router.get('/poke/:id', function(req, res) {
   var data = {};
-  request('http://pokeapi.co/api/v2/pokemon-species/'+ req.params.id, function (error, response, body) {
-    data.body = JSON.parse(body);
-    res.json(data.body);   
+  var initialCall = new Promise(function(resolve, reject){
+
+    request('http://pokeapi.co/api/v2/pokemon/'+ req.params.id, function (error, response, body) {
+      data.standard = JSON.parse(body);
+      resolve(true)
+    });
+
+    
   });
+  var secondCall = new Promise(function(resolve, reject){
+
+    request('http://pokeapi.co/api/v2/pokemon-species/'+ req.params.id, function (error, response, body) {
+      data.species = JSON.parse(body);
+      resolve(true)
+    });
+
+    
+  });
+
+  initialCall.then(
+    () => {
+      secondCall.then(
+        () => res.json(data)
+      )
+    }
+  )
+  
 });
 
 
