@@ -14,6 +14,9 @@ var PokeContainer = React.createClass({
               back_default: null 
             } 
           } 
+        },
+        species: {
+          flavor_text_entries:[ {}, { flavor_text: null } ]
         } 
       }
     };
