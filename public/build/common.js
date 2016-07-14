@@ -368,8 +368,8 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/*global window, global*/
-	var util = __webpack_require__(/*! util */ 820)
-	var assert = __webpack_require__(/*! assert */ 836)
+	var util = __webpack_require__(/*! util */ 871)
+	var assert = __webpack_require__(/*! assert */ 887)
 	var now = __webpack_require__(/*! date-now */ 10)
 	
 	var slice = Array.prototype.slice
@@ -20446,7 +20446,7 @@
 
 /***/ },
 
-/***/ 820:
+/***/ 871:
 /*!*************************************************************!*\
   !*** C:/Users/joji/Desktop/projects/pokedex/~/util/util.js ***!
   \*************************************************************/
@@ -20977,7 +20977,7 @@
 	}
 	exports.isPrimitive = isPrimitive;
 	
-	exports.isBuffer = __webpack_require__(/*! ./support/isBuffer */ 821);
+	exports.isBuffer = __webpack_require__(/*! ./support/isBuffer */ 872);
 	
 	function objectToString(o) {
 	  return Object.prototype.toString.call(o);
@@ -21021,7 +21021,7 @@
 	 *     prototype.
 	 * @param {function} superCtor Constructor function to inherit prototype from.
 	 */
-	exports.inherits = __webpack_require__(/*! inherits */ 822);
+	exports.inherits = __webpack_require__(/*! inherits */ 873);
 	
 	exports._extend = function(origin, add) {
 	  // Don't do anything if add isn't an object
@@ -21043,7 +21043,7 @@
 
 /***/ },
 
-/***/ 821:
+/***/ 872:
 /*!********************************************************************************!*\
   !*** C:/Users/joji/Desktop/projects/pokedex/~/util/support/isBufferBrowser.js ***!
   \********************************************************************************/
@@ -21058,7 +21058,7 @@
 
 /***/ },
 
-/***/ 822:
+/***/ 873:
 /*!*****************************************************************************!*\
   !*** C:/Users/joji/Desktop/projects/pokedex/~/inherits/inherits_browser.js ***!
   \*****************************************************************************/
@@ -21091,7 +21091,7 @@
 
 /***/ },
 
-/***/ 836:
+/***/ 887:
 /*!*****************************************************************!*\
   !*** C:/Users/joji/Desktop/projects/pokedex/~/assert/assert.js ***!
   \*****************************************************************/
@@ -21165,7 +21165,7 @@
 	// ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 	// WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 	
-	var util = __webpack_require__(/*! util/ */ 820);
+	var util = __webpack_require__(/*! util/ */ 871);
 	var hasOwn = Object.prototype.hasOwnProperty;
 	var pSlice = Array.prototype.slice;
 	var functionsHaveNames = (function () {
